@@ -1,9 +1,100 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Registro de Curso</title>
-</head>
-<body>
+	<!DOCTYPE html>
+	<html>
+	<head>
+		
+		<title>Registro de Curso</title>
+		<meta charset="utf-8">
 
-</body>
-</html>
+	</head>
+	<body bgcolor="#235689" >
+
+		<form method="GET" action="Registrado.html">
+			<div >
+				<center>
+					<h1>FORMULARIO REGISTRO DE CURSOS</h1>
+				</center>
+			</div>
+			<div >
+				<fieldset>
+					<legend> <strong>Datos Estudiante</strong></legend>
+					<label>Nombre :</label>
+					<input type="text" name="nombre" size="30" tabindex="0">
+					<label>Apellidos:</label>
+					<input type="text" name="apellidos"  size="30"><br><br>
+					<label>Telefono:</label>
+					<input type="text" name="telefono"  size="30">
+					<label>Sexo:</label>
+					<input type="radio" name="sexo" value="Masculino" >Masculino
+					<input type="radio" name="sexo" value="Femenino">Femenino
+				</fieldset>
+			</div>
+			<br><br>
+			<div>
+				<fieldset>
+					<legend> <strong>Datos Universidad </strong></legend>
+					<label>Universidad:</label>
+					<select name="universidad">
+						<option>--</option>
+						<option>Universidad O&M</option>
+						<option>Universidad UASD</option>
+						<option>Universidad UTESA</option>
+						<option>Universidad INTEC</option>
+						<option>Universidad UAPA</option>
+						<option>Universidad UNPHU</option>
+						<option>Universidad CENTU</option>
+						<option>Universidad APEC</option>
+						<option>Universidad UNIBE</option>
+					</select>
+					
+					<label> Carrera:</label>
+					<select name="carrera">
+						<option>--</option>
+						<option>Ingenieria en Sistemas</option>
+						<option>Licenciatura en Contabilidad</option>
+						<option>Ingenieria Civil</option>
+						<option>Licencitura en Derecho</option>
+						<option>Ingenieria Electromecanica</option>
+						<option>Licenciatura en Psicologia</option>
+						<option>Ingenieria en Agrimensura</option>
+						<option>Arquitectura</option>
+						<option>Lincencitura en Magisterio</option>
+					</select>
+					
+					<label>Ciudad: </label>
+					<select name="ciudad">
+						<option>--</option>
+						<option>Santo Domningo</option>
+						<option>Santiago</option>
+						<option>La Vega</option>
+						<option>Higuey</option>
+						<option>Puerto Plata</option>
+						<option>Bonao</option>
+						<option>Moca</option>
+						<option>San Pedro de Macori</option>
+						<option>San Cristobal</option>
+					</select>
+					<br><br>
+					<label>Cursos:</label><br>
+					<input type="checkbox" name="CursoHtml" value="Html">Html 	<input type="checkbox" name="CursoDisenoWeb" value="Diseño Web">Diseño Web <br>
+					<input type="checkbox" name="CursoPOO" value="POO">POO 		<input type="checkbox" name="CursoJavaScript" value="JavaScript">JavaScript <br>	
+					<input type="checkbox" name="CursoMVC" value="MVC">MVC 		<input type="checkbox" name="CursoCSharp" value="C Sharp">C Sharp <br>
+				</fieldset>
+			</div>
+			<br><br>
+			<div>
+				<fieldset>
+					<legend> <strong> Comentarios </strong> </legend>
+					<label>Porque le gustaria hacer esos cursos: </label> <br>
+					<textarea name="comentario" rows="3" cols="30"> </textarea>
+				</fieldset>
+			</div>
+			<br>
+			<input type="submit" value="Registrarse">
+			<center>
+				Copyright@ Ing.Stalyn Contreras
+			</center>
+		</form>
+		
+
+	</body>
+	</html>
