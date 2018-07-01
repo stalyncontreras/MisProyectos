@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript Practica 2.1</title>
+	<meta charset="utf-8">
+	
+</head>
+<body>
+	<script> 
+
+		function Consultar(){
+
+			var _usuario = document.getElementById("usuario").value;
+			var _clave = document.getElementById("clave").value;
+			
+			
+				if(_usuario != "admin"){
+
+					document.getElementById("aqui").innerHTML = "Usuario Incorrecto";
+					
+				}else if(_clave != "admin"){
+					document.getElementById("aqui").innerHTML = "Clave Incorrecta";
+				}else{
+					document.getElementById("aqui").innerHTML = "Acceso Correcto";
+				}
+				
+		};
+		
+	</script>
+
+<center>
+	<div >
+<br><br><br><br>
+		<form name="formulario">
+			
+			<label>User:</label>
+			<input type="text" name="Usuario" id="usuario" size="22px"> <br><br>
+
+			<label>Pass:</label>
+			<input type="text" name="Clave" id="clave" size="22px"> <br><br>
+
+			<input type="button" value="Acceder" style="width:200px" onclick="Consultar()"><br><br>
+		</form>
+		
+
+		<div id="aqui">  </div>
+	</div>
+</center>
+
+</body>
+</html>
