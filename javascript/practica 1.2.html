@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript Practica 1.2</title>
+	<meta charset="utf-8">
+	
+</head>
+<body>
+	<script> 
+
+		var x = parseInt(prompt("Ingrese un numero del 1 al 12: "));
+
+		if ( (x >= 1) && (x <= 12) ) {
+
+			for(var a = 1; a <= x; a++){ 
+
+				document.write(" <table border='2'> ");
+				document.write("	<th>Tabla del " + a + "</th> ");
+				document.write("		<tr> ");
+				document.write("			<td> ");
+				
+								
+										for(var i = 1; i <= 12; i++){
+											
+											document.write(i); 
+											document.write(" x ");
+											document.write(a);
+											document.write(" = ");
+											document.write(i * a);
+											document.write("<br>");
+
+										}
+														
+				document.write("			</td> ");
+				document.write("		</tr> ");
+				document.write("</table> ");
+			}
+		}
+		else{
+			document.write("Debe ingresar un numero correcto. Actualize la pagina...");
+		}
+		
+	</script>
+
+</body>
+</html>
