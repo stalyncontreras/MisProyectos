@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript Practica 2.1</title>
+	<meta charset="utf-8">
+	
+</head>
+<body>
+	<script> 
+
+		function Calcular(){
+
+
+			var _monto = parseInt( document.getElementById("monto").value);
+			var _tasa = parseInt( document.getElementById("tasa").value);
+
+				document.formulario.peso.value = _monto * _tasa;
+
+				document.getElementById("aqui").innerHTML = "Success";
+		};
+		
+	</script>
+
+<center>
+	<div >
+<br><br><br><br>
+		<form name="formulario">
+			
+			<label>Monto Dollar</label>
+			<input type="text" name="monto" id="monto"><br><br>
+
+			<label>Tasa Dollar</label>
+			<input type="text" name="tasa" id="tasa"><br><br>
+
+			<label>Peso Dominicano</label>
+			<input type="text" name="peso" id="peso" disabled="true"><br><br>
+
+<input type="button" value="Calcular" onclick="Calcular()">
+		<input type="reset" name="limpiar" value="Limpiar">
+		</form>
+		
+
+		<div id="aqui">  </div>
+	</div>
+</center>
+
+</body>
+</html>
