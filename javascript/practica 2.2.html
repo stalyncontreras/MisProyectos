@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript Practica 2.1</title>
+	<meta charset="utf-8">
+	
+</head>
+<body>
+	<script> 
+
+		function Consultar(){
+
+			var _numero = parseFloat( document.getElementById("numero").value);
+			
+				if( (_numero % 5) == 0 ){
+
+					document.getElementById("aqui").innerHTML = "Es divisible con 5";
+				}else{
+					document.getElementById("aqui").innerHTML = "NO es divisible con 5";
+				}
+		};
+		
+	</script>
+
+<center>
+	<div >
+<br><br><br><br>
+		<form name="formulario">
+			
+			<label>Introdusca un Numero</label>
+			<input type="text" name="Numero" id="numero" > <br><br>
+
+			<input type="button" value="Click" onclick="Consultar()"><br><br>
+		</form>
+		
+
+		<div id="aqui">  </div>
+	</div>
+</center>
+
+</body>
+</html>
