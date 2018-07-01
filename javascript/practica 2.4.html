@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript Practica 2.4</title>
+	<meta charset="utf-8">
+	
+</head>
+<body>
+	<script> 
+
+		var _numero = parseInt(prompt("Introduzca un numero"));
+
+		Calcular(_numero);
+
+		function Calcular( valor ){
+
+			document.write("<h1>Tabla de multiplicar del " + valor + "</h1>");
+			for( var i = 1; i <= 12; i++){
+				document.write(valor);
+				document.write(" x ");
+				document.write(i);
+				document.write(" = ");
+				document.write(valor * i);
+				document.write("<br>");
+			}
+
+		}	
+	</script>
+
+<center>
+	
+</center>
+
+</body>
+</html>
